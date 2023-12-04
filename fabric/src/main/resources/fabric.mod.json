@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "lockbox",
+  "version": "${version}",
+  "name": "Lockbox",
+  "description": "Protect your base without much fuss!",
+  "authors": [
+  "SSBlur"
+  ],
+  "contact": {
+  "homepage": "https://github.com/ssblur/lockbox",
+  "sources": "https://github.com/ssblur/lockbox"
+  },
+  "license": "WTFPL",
+  "icon": "assets/lockbox/icon.png",
+  "environment": "*",
+  "entrypoints": {
+  "main": [
+    "com.ssblur.lockbox.fabric.LockboxFabric"
+  ]
+  },
+  "depends": {
+  "fabric": "*",
+  "minecraft": ">=1.20.1",
+  "architectury": ">=9.1.12"
+  }
+}

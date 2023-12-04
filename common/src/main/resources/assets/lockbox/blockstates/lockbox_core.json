@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lockbox:block/lockbox_core"
+    }
+  }
+}

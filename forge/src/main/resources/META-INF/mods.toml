@@ -1,0 +1,35 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "WTFPL"
+
+[[mods]]
+modId = "lockbox"
+version = "${version}"
+displayName = "Lockbox"
+authors = "SSBlur"
+description = '''
+Protect your base without much fuss!
+'''
+#logoFile = ""
+
+[[dependencies.lockbox]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.lockbox]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.lockbox]]
+modId = "architectury"
+mandatory = true
+versionRange = "[9.1.12,)"
+ordering = "AFTER"
+side = "BOTH"

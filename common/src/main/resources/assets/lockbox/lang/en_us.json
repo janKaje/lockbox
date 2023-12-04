@@ -1,0 +1,9 @@
+{
+  "block.lockbox.lockbox_frame": "Lockbox Frame",
+  "block.lockbox.lockbox_core": "Lockbox Core",
+  "itemGroup.lockbox.lockbox": "Lockbox",
+  "message.lockbox.break": "You cannot break this block; it is inside a Lockbox",
+  "message.lockbox.place": "You cannot place a block here; it would be inside a Lockbox",
+  "message.lockbox.use": "You cannot use this; it is inside a Lockbox",
+  "message.lockbox.created": "Lockbox created from %1$s, %2$s, %3$s to %4$s, %5$s, %6$s"
+}
