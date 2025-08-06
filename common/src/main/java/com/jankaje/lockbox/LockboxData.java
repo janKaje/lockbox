@@ -10,6 +10,8 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.saveddata.SavedData;
 
+import com.jankaje.lockbox.LockboxUtil;
+
 import java.util.*;
 
 public class LockboxData extends SavedData {
@@ -127,6 +129,13 @@ public class LockboxData extends SavedData {
   public boolean check(BlockPos pos, Player player) {
     var start = lookup(pos);
     if(start == null) return true;
+
+    // Check if the frame is complete
+    if(!LockboxUtil.ensureCompleteFrame(player.level(), start, data.get(start))) {
+      remove(start);
+      return true;
+    }
+
     var list = players.get(start);
     if(list != null)
       return list.contains(player.getGameProfile());
