@@ -1,6 +1,6 @@
-package com.ssblur.lockbox.fabric;
+package com.jankaje.lockbox.fabric;
 
-import com.ssblur.lockbox.LockboxExpectPlatform;
+import com.jankaje.lockbox.LockboxExpectPlatform;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.nio.file.Path;

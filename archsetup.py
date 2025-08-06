@@ -39,7 +39,7 @@ def substitutions(value):
     expect_platform = pascal_case + "ExpectPlatform"
     return [
         ("    ", "  "),
-        ("net.examplemod", "com.ssblur." + lower_case),
+        ("net.examplemod", "com.jankaje." + lower_case),
         ("ExampleExpectPlatform", expect_platform),
         ("Example Mod", title_case),
         ("ExampleMod", pascal_case),
@@ -53,7 +53,7 @@ def main():
     customize(".", substitutions(input()))
     for name in ("common", "forge", "fabric"):
         mkdir(f"./{name}/src/main/java/com")
-        rename(f"./{name}/src/main/java/net", f"./{name}/src/main/java/com/ssblur")
+        rename(f"./{name}/src/main/java/net", f"./{name}/src/main/java/com/jankaje")
 
 if __name__ == "__main__":
     main()

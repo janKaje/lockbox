@@ -5,18 +5,19 @@
   "name": "Lockbox",
   "description": "Protect your base without much fuss!",
   "authors": [
-  "SSBlur"
+  "SSBlur",
+  "janKaje"
   ],
   "contact": {
-  "homepage": "https://github.com/ssblur/lockbox",
-  "sources": "https://github.com/ssblur/lockbox"
+  "homepage": "https://github.com/jankaje/lockbox",
+  "sources": "https://github.com/jankaje/lockbox"
   },
   "license": "WTFPL",
   "icon": "assets/lockbox/icon.png",
   "environment": "*",
   "entrypoints": {
   "main": [
-    "com.ssblur.lockbox.fabric.LockboxFabric"
+    "com.jankaje.lockbox.fabric.LockboxFabric"
   ]
   },
   "depends": {

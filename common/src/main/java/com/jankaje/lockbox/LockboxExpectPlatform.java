@@ -1,4 +1,4 @@
-package com.ssblur.lockbox;
+package com.jankaje.lockbox;
 
 import dev.architectury.injectables.annotations.ExpectPlatform;
 import dev.architectury.platform.Platform;
@@ -13,9 +13,9 @@ public class LockboxExpectPlatform {
    * platform sub-package, with its class suffixed with {@code Impl}.
    * <p>
    * Example:
-   * Expect: com.ssblur.lockbox.LockboxExpectPlatform#getConfigDirectory()
-   * Actual Fabric: com.ssblur.lockbox.fabric.LockboxExpectPlatformImpl#getConfigDirectory()
-   * Actual Forge: com.ssblur.lockbox.forge.LockboxExpectPlatformImpl#getConfigDirectory()
+   * Expect: com.jankaje.lockbox.LockboxExpectPlatform#getConfigDirectory()
+   * Actual Fabric: com.jankaje.lockbox.fabric.LockboxExpectPlatformImpl#getConfigDirectory()
+   * Actual Forge: com.jankaje.lockbox.forge.LockboxExpectPlatformImpl#getConfigDirectory()
    * <p>
    * <a href="https://plugins.jetbrains.com/plugin/16210-architectury">You should also get the IntelliJ plugin to help with @ExpectPlatform.</a>
    */

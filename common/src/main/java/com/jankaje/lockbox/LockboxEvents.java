@@ -1,6 +1,6 @@
-package com.ssblur.lockbox;
+package com.jankaje.lockbox;
 
-import com.ssblur.lockbox.platform.Services;
+import com.jankaje.lockbox.platform.Services;
 import dev.architectury.event.EventResult;
 import dev.architectury.event.events.common.BlockEvent;
 import dev.architectury.event.events.common.InteractionEvent;

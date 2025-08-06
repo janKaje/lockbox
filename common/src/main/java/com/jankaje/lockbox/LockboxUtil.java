@@ -1,8 +1,7 @@
-package com.ssblur.lockbox;
+package com.jankaje.lockbox;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
-import org.jetbrains.annotations.Nullable;
 
 public class LockboxUtil {
   static boolean isFrameBlock(Level level, BlockPos pos) {

@@ -1,4 +1,4 @@
-package com.ssblur.lockbox.platform.services;
+package com.jankaje.lockbox.platform.services;
 
 public interface ConfigHelper {
 	/**

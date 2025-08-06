@@ -1,6 +1,6 @@
-package com.ssblur.lockbox;
+package com.jankaje.lockbox;
 
-import com.ssblur.lockbox.SparkConfig.Config;
+import com.jankaje.lockbox.SparkConfig.Config;
 import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.IOException;

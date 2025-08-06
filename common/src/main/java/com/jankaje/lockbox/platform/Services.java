@@ -1,7 +1,7 @@
-package com.ssblur.lockbox.platform;
+package com.jankaje.lockbox.platform;
 
-import com.ssblur.lockbox.LockboxConstants;
-import com.ssblur.lockbox.platform.services.ConfigHelper;
+import com.jankaje.lockbox.LockboxConstants;
+import com.jankaje.lockbox.platform.services.ConfigHelper;
 
 import java.util.ServiceLoader;
 

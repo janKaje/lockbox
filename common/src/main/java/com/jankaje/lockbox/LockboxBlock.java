@@ -1,6 +1,6 @@
-package com.ssblur.lockbox;
+package com.jankaje.lockbox;
 
-import com.ssblur.lockbox.platform.Services;
+import com.jankaje.lockbox.platform.Services;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
@@ -11,8 +11,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
-
-import java.util.List;
 
 public class LockboxBlock extends Block {
   public LockboxBlock(Properties properties) {

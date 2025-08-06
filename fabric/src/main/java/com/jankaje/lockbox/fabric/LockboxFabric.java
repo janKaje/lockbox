@@ -1,7 +1,7 @@
-package com.ssblur.lockbox.fabric;
+package com.jankaje.lockbox.fabric;
 
-import com.ssblur.lockbox.Lockbox;
-import com.ssblur.lockbox.PrintConfig;
+import com.jankaje.lockbox.Lockbox;
+import com.jankaje.lockbox.PrintConfig;
 import net.fabricmc.api.ModInitializer;
 
 public class LockboxFabric implements ModInitializer {

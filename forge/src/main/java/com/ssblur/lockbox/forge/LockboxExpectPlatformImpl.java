@@ -1,6 +1,6 @@
-package com.ssblur.lockbox.forge;
+package com.jankaje.lockbox.forge;
 
-import com.ssblur.lockbox.LockboxExpectPlatform;
+import com.jankaje.lockbox.LockboxExpectPlatform;
 import net.minecraftforge.fml.loading.FMLPaths;
 
 import java.nio.file.Path;

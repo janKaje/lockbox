@@ -1,7 +1,7 @@
-package com.ssblur.lockbox.forge;
+package com.jankaje.lockbox.forge;
 
 import dev.architectury.platform.forge.EventBuses;
-import com.ssblur.lockbox.Lockbox;
+import com.jankaje.lockbox.Lockbox;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 

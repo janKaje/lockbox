@@ -1,4 +1,4 @@
-package com.ssblur.lockbox;
+package com.jankaje.lockbox;
 
 import com.mojang.authlib.GameProfile;
 import com.mojang.serialization.Codec;

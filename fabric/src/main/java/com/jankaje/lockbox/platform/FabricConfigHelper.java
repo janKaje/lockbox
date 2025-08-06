@@ -1,7 +1,7 @@
-package com.ssblur.lockbox.platform;
+package com.jankaje.lockbox.platform;
 
-import com.ssblur.lockbox.platform.services.ConfigHelper;
-import com.ssblur.lockbox.LockboxConfigFabric;
+import com.jankaje.lockbox.platform.services.ConfigHelper;
+import com.jankaje.lockbox.LockboxConfigFabric;
 
 public class FabricConfigHelper implements ConfigHelper {
 	@Override

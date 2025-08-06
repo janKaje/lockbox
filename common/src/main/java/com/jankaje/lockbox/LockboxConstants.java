@@ -1,4 +1,4 @@
-package com.ssblur.lockbox;
+package com.jankaje.lockbox;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -1,7 +1,7 @@
-package com.ssblur.lockbox;
+package com.jankaje.lockbox;
 
-import com.ssblur.lockbox.platform.Services;
-import com.ssblur.lockbox.platform.services.ConfigHelper;
+import com.jankaje.lockbox.platform.Services;
+import com.jankaje.lockbox.platform.services.ConfigHelper;
 
 public class PrintConfig {
     public static void printConfigs() {
