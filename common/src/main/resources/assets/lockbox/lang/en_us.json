@@ -5,5 +5,8 @@
   "message.lockbox.break": "You cannot break this block; it is inside a Lockbox",
   "message.lockbox.place": "You cannot place a block here; it would be inside a Lockbox",
   "message.lockbox.use": "You cannot use this; it is inside a Lockbox",
-  "message.lockbox.created": "Lockbox created from %1$s, %2$s, %3$s to %4$s, %5$s, %6$s"
+  "message.lockbox.created": "Lockbox created from %1$s, %2$s, %3$s to %4$s, %5$s, %6$s",
+  "message.lockbox.toobig": "This lockbox is too big! The max size allowed is %1$s blocks per side.",
+  "message.lockbox.toosmall": "This lockbox has no interior. Make it bigger!",
+  "message.lockbox.incomplete_frame": "This lockbox's frame is missing pieces."
 }

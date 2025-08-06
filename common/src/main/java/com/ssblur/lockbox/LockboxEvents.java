@@ -1,5 +1,6 @@
 package com.ssblur.lockbox;
 
+import com.ssblur.lockbox.platform.Services;
 import dev.architectury.event.EventResult;
 import dev.architectury.event.events.common.BlockEvent;
 import dev.architectury.event.events.common.InteractionEvent;
@@ -24,6 +25,10 @@ public class LockboxEvents implements BlockEvent.Break, BlockEvent.Place, Intera
       if (data.check(pos, player)) {
         return EventResult.pass();
       } else {
+        if (!Services.CONFIG.allowFrameBreak()) {
+          player.displayClientMessage(Component.translatable("message.lockbox.break"), true);
+          return EventResult.interruptFalse();
+        }
         var start = data.lookup(pos);
         if (start != null && LockboxUtil.isOnBorder(pos, start, data.data.get(start))) {
           data.remove(start);
@@ -40,8 +45,6 @@ public class LockboxEvents implements BlockEvent.Break, BlockEvent.Place, Intera
   @Override
   public EventResult click(Player player, InteractionHand hand, BlockPos pos, Direction face) {
     var level = player.level();
-    if(level.getBlockState(pos).getBlock() == Lockbox.LOCKBOX_CORE.get())
-      return EventResult.pass();
 
     if(level instanceof ServerLevel server)
       if(LockboxData.computeIfAbsent(server).check(pos, player)) {

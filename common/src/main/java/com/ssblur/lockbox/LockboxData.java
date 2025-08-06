@@ -135,7 +135,9 @@ public class LockboxData extends SavedData {
 
   public BlockPos lookup(BlockPos pos) {
     for(var key: data.keySet())
-      if(key.compareTo(pos) <= 0 && data.get(key).compareTo(pos) >= 0)
+      if (key.getX() <= pos.getX() && key.getY() <= pos.getY() && key.getZ() <= pos.getZ()
+          && data.get(key).getX() >= pos.getX() && data.get(key).getY() >= pos.getY()
+          && data.get(key).getZ() >= pos.getZ())
         return key;
     return null;
   }
