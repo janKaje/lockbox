@@ -1,6 +1,8 @@
 {
   "block.lockbox.lockbox_frame": "Lockbox Frame",
   "block.lockbox.lockbox_core": "Lockbox Core",
+  "block.lockbox.hardened_lockbox_frame": "Hardened Lockbox Frame",
+  "block.lockbox.hardened_lockbox_core": "Hardened Lockbox Core",
   "itemGroup.lockbox.lockbox": "Lockbox",
   "message.lockbox.break": "You cannot break this block; it is inside a Lockbox",
   "message.lockbox.place": "You cannot place a block here; it would be inside a Lockbox",

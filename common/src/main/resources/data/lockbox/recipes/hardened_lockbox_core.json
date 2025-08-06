@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    "ici",
+    " i "
+  ],
+  "key": {
+    "c": {
+      "item": "lockbox:lockbox_core"
+    },
+    "i": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "lockbox:hardened_lockbox_core"
+  }
+}

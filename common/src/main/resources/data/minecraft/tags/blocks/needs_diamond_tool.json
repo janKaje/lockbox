@@ -1,0 +1,5 @@
+{
+  "replace": false,
+  "values": ["lockbox:hardened_lockbox_frame",
+    "lockbox:hardened_lockbox_core"]
+}

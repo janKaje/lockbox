@@ -6,7 +6,9 @@ import net.minecraft.world.level.Level;
 public class LockboxUtil {
   static boolean isFrameBlock(Level level, BlockPos pos) {
     return level.getBlockState(pos).getBlock() == Lockbox.LOCKBOX_FRAME.get()
-            || level.getBlockState(pos).getBlock() == Lockbox.LOCKBOX_CORE.get();
+            || level.getBlockState(pos).getBlock() == Lockbox.LOCKBOX_CORE.get()
+            || level.getBlockState(pos).getBlock() == Lockbox.HARDENED_LOCKBOX_FRAME.get()
+            || level.getBlockState(pos).getBlock() == Lockbox.HARDENED_LOCKBOX_CORE.get();
   }
 
   public static boolean isOnBorder(BlockPos pos, BlockPos start, BlockPos end) {

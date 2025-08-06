@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "lockbox:block/hardened_lockbox_frame"
+    }
+  }
+}

@@ -20,15 +20,45 @@ public class Lockbox {
 
   public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(MOD_ID, Registries.BLOCK);
   public static final RegistrySupplier<Block> LOCKBOX_FRAME = BLOCKS.register("lockbox_frame", () ->
-    new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+    new Block(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.STONE)
+            .instrument(NoteBlockInstrument.BASEDRUM)
+            .requiresCorrectToolForDrops()
+            .strength(1.5f, 6.0f)
+    ));
   public static final RegistrySupplier<Block> LOCKBOX_CORE = BLOCKS.register("lockbox_core", () ->
-    new LockboxBlock(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(1.5f, 6.0f)));
+    new LockboxBlock(BlockBehaviour.Properties.of()
+            .mapColor(MapColor.STONE)
+            .instrument(NoteBlockInstrument.BASEDRUM)
+            .requiresCorrectToolForDrops()
+            .strength(1.5f, 6.0f)
+    ));
+  public static final RegistrySupplier<Block> HARDENED_LOCKBOX_FRAME = BLOCKS.register("hardened_lockbox_frame", () ->
+          new Block(BlockBehaviour.Properties.of()
+                  .mapColor(MapColor.STONE)
+                  .instrument(NoteBlockInstrument.BASEDRUM)
+                  .requiresCorrectToolForDrops()
+                  .strength(1.5f, 6.0f)
+                  .explosionResistance(1200.0f)
+          ));
+  public static final RegistrySupplier<Block> HARDENED_LOCKBOX_CORE = BLOCKS.register("hardened_lockbox_core", () ->
+          new LockboxBlock(BlockBehaviour.Properties.of()
+                  .mapColor(MapColor.STONE)
+                  .instrument(NoteBlockInstrument.BASEDRUM)
+                  .requiresCorrectToolForDrops()
+                  .strength(1.5f, 6.0f)
+                  .explosionResistance(1200.0f)
+          ));
 
   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(MOD_ID, Registries.ITEM);
   public static final RegistrySupplier<Item> LOCKBOX_FRAME_ITEM = ITEMS.register("lockbox_frame", () ->
       new BlockItem(LOCKBOX_FRAME.get(), new Item.Properties().arch$tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)));
   public static final RegistrySupplier<Item> LOCKBOX_CORE_ITEM = ITEMS.register("lockbox_core", () ->
     new BlockItem(LOCKBOX_CORE.get(), new Item.Properties().arch$tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)));
+  public static final RegistrySupplier<Item> HARDENED_LOCKBOX_FRAME_ITEM = ITEMS.register("hardened_lockbox_frame", () ->
+    new BlockItem(HARDENED_LOCKBOX_FRAME.get(), new Item.Properties().arch$tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)));
+  public static final RegistrySupplier<Item> HARDENED_LOCKBOX_CORE_ITEM = ITEMS.register("hardened_lockbox_core", () ->
+    new BlockItem(HARDENED_LOCKBOX_CORE.get(), new Item.Properties().arch$tab(CreativeModeTabs.FUNCTIONAL_BLOCKS)));
 
   public static final LockboxEvents EVENTS = new LockboxEvents();
   public static void init() {
